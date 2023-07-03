@@ -1,5 +1,270 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div class="heading">
+  <h1>About Me</h1>
+</div>
+<div class="container-about">
+  <section class="about">
+    <div class="about-image">
+      <img src="https://i.postimg.cc/qBnMwVTy/C12-Ridhaa-Gabier-2.jpg" alt="Image">
+    </div>
+    <div class="about-content">
+          
+            <h2 class="m-heading" data-aos="fade-right">Software Developer</h2>
+            <p>My name is <b class="text-warning">Ridhaa Gabier </b>,I'm hard working and dedicated to
+              achieve the goals my heart desires.I'm a <b class="text-warning">trustworthy</b> and loyal companion and love working in groups.I am an <b class="text-warning">asset</b> to my team and will ensure quick assistance to those in need.</p>
+
+            <p>I consider myself a builder.I find it fascinating to learn how things work.It's my passion to strive towards success to exceed the expectations and to break beyond my limitations that my mind holds.My <b
+                class="text-warning">strength's</b> are that I'm a <b class="text-warning">creative problem
+                solver</b> and able to handle multiple tasks on a daily basis.I'm determined and may be competitive at times as there is always something one can learn.I am a dependable person who is great at <b class="text-warning">time management</b>.I love learning new things and doing projects on the side
+              for self interests.Despite all my qualities i am very <b class="text-warning">empathic</b> towards my fellow
+              colleges and people i work for in general.</p>
+
+              <p> I enjoy online gaming and building up small computer projects.I truly have a passion for <b class="text-warning">coding and designing websites</b> as i find it very enjoyable.I am skilled in in multiple aspects such as having knowledge about general <b class="text-warning">hardware and software</b> and how it operates, able to work in a fast paced environment and know how to operate devices such as computers,laptops etc.I am quite skilled in <b class="text-warning">HTML , CSS , Git , GitHub, Bootstrap, JavaScript and Vue JS</b>.Currently I'm studying at <b class="text-warning">Life Choices Academy</b> to improve my technical and social skills and eventually become a certified Software Developer.</p>
+                
+                <p>I am experienced in a working environment as i worked in the past for a company called <b class="text-warning">SOS Packaging Pty Ltd</b>.My position was an admin/receptionist and done liaising telephonically with clients,filling,post and data capturing.I have also promoted people via social media and worked as a part time streamer on <b class="text-warning">YouTube</b> for my gaming channel.</p>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+    </div>
+  </section>
+</div>
+
 </template>
+
+
+<script>
+export default {
+  name: 'AboutView',
+  components: {}
+}
+</script>
+
+<style scoped>
+/* About Page */
+.heading {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+.heading h1 {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+  position: relative;
+}
+.heading h1::after {
+  content: "";
+  margin: 0 auto;
+  background-color: #333333;
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 100%;
+}
+
+.line-head::after {
+  content: "";
+  margin: 0 auto;
+  background-color: #333333;
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 18%;
+  position: relative;
+}
+
+.line-heading::after {
+  content: "";
+  margin: 0 auto;
+  background-color: #333333;
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 31%;
+  position: relative;
+}
+
+.container-about {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-image {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.about-image img {
+  max-width: 100%;
+  display: block;
+  transition: 0.6 ease;
+  height: auto;
+}
+.about-content {
+  flex: 1;
+}
+.about-content h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.about-content p {
+  font-size: 18px;
+
+  line-height: 2;
+}
+.about-content .read-more {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  background-color: #eb5e28;
+  color: white;
+}
+.about-content .read-more:hover {
+  box-shadow: 4px 4px 10px #ccc5b9, -4px -4px 10px#CCC5B9;
+}
+@media screen and (max-width: 300px) {
+  .heading {
+    padding: 0px 20px;
+  }
+  .m-heading{
+    padding-left: 40px;
+  }
+  .line-head::after {
+    width: 70%;
+  }
+  .line-heading::after {
+    width: 80%;
+  }
+  .heading-h1 {
+    font-size: 20px;
+  }
+
+  .heading p {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+
+  .container {
+    padding: 0px;
+    width: min(900px, 100px -3rem);
+    margin-inline: auto;
+  }
+
+  .about {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+
+  .about-content {
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  .about-content .read-more {
+    font-size: 15px;
+  }
+
+}
+
+</style>
