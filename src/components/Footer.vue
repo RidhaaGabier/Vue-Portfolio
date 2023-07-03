@@ -5,7 +5,7 @@
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <!-- Left -->
           <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
+            <span>Get connected with me on social networks:</span>
           </div>
           <!-- Left -->
       
@@ -37,10 +37,10 @@
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-3"></i>R&G Clothing
+                  <i class="fas fa-gem me-3"></i>Ridhaa Gabier
                 </h6>
                 <p>
-                  We at R&G Pty Ltd clothing store care about our customer's feedback as we strive to serve nothing but the best
+                 Aspiring Software Developer At Your Door Step!!
                 </p>
               </div>
               <!-- Grid column -->
@@ -49,23 +49,23 @@
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                  Products
+                  Projects
                 </h6>
                 <p>
-                  <router-link to="/products" class="text-reset">Tops</router-link>
-                  <router-link to="/products" class="text-reset">Tops</router-link>
+                  <router-link to="/products" class="text-reset">HTML</router-link>
+                  <router-link to="/products" class="text-reset"></router-link>
                 </p>
                 <p>
-                  <router-link to="/products" class="text-reset">Dresses</router-link>
-                  <router-link to="/products" class="text-reset">Dresses</router-link>
+                  <router-link to="/products" class="text-reset">Boostrap</router-link>
+                  <router-link to="/products" class="text-reset"></router-link>
                 </p>
                 <p>
-                  <router-link to="/products" class="text-reset">Jeans</router-link>
-                  <router-link to="/products" class="text-reset">Jeans</router-link>
+                  <router-link to="/products" class="text-reset">JavaScript</router-link>
+                  <router-link to="/products" class="text-reset"></router-link>
                 </p>
                 <p>
-                  <router-link to="/products" class="text-reset">Shoes</router-link>
-                  <router-link to="/products" class="text-reset">Shoes</router-link>
+                  <router-link to="/products" class="text-reset">VueJS</router-link>
+                  <router-link to="/products" class="text-reset"></router-link>
                 </p>
               </div>
               <!-- Grid column -->
@@ -80,10 +80,10 @@
                   <router-link to="/" class="text-reset"></router-link>
                 </p>
                 <p>
-                  <router-link to="/about" class="text-reset">About Us</router-link>
+                  <router-link to="/about" class="text-reset">About</router-link>
                 </p>
                 <p>
-                  <router-link to="/products" class="text-reset">Product</router-link>
+                  <router-link to="/project" class="text-reset">Projects</router-link>
                 </p>
                 <p>
                     <router-link to="/contact" class="text-reset">Contact</router-link>
@@ -98,7 +98,7 @@
                 <p><i class="fas fa-home me-3"></i> Cape Town, WC 10012, ZA</p>
                 <p>
                   <i class="fas fa-envelope me-3"></i>
-                  R&Gclothing@gmail.com
+                  2811rg@gmail.com
                 </p>
                 <p><i class="fas fa-phone me-3"></i> + 27 021 567 88</p>
                 <p><i class="fas fa-print me-3"></i> + 27 021 667 89</p>

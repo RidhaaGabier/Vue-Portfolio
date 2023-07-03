@@ -1,6 +1,60 @@
 <template>
     <div class="contact">
-      <h1>This is an contact page</h1>
+      <main id="main-Section">
+
+<div id="contact" class="row">
+  <div class="col first">
+    <div class="card left">
+      <div class="hide hijab">
+        <img src="https://i.postimg.cc/qBnMwVTy/C12-Ridhaa-Gabier-2.jpg" loading="lazy" class="pfp" />
+      </div>
+
+      <div class="text-center pb-3 add-pad bot">
+        <h4><strong>Ridhaa Gabier</strong></h4>
+        <em>Contact Details:</em> <br />
+        <br />
+        Number: 021 967 000 <br />
+        Email: 2811rg@gmail.com<br />
+        <br />
+        <p>Lets get partnering  <br> Aspiring Software Developer.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="form-box" class="col-md-8 p-2">
+
+    <div class="card border-2 mt-5 second" id="contact-box">
+
+      <form action="https://formspree.io/f/xknayqyj" method="POST">
+
+        <h2 class="card p-3 heading-text pink-bg border-2 text-center" style="border: none;">Contact Me!</h2>
+        <div class="input-ting">
+          <label class="form-label heading-text">Name:</label>
+          <input type="text" name="Name" class="form-control light-bg border-2" placeholder="Please enter your name"
+            required />
+        </div>
+
+        <div class="input-ting">
+          <label class="form-label heading-text">Email:</label>
+          <input type="email" name="Email" class="form-control light-bg border-2"
+            placeholder="Please Enter your email" required />
+        </div>
+
+        <div class="input-ting">
+          <label class="form-label heading-text">Enter message:</label>
+          <textarea name="Message" class="form-control light-bg border-2" rows="5"
+            placeholder="We would like to hear from you"></textarea>
+        </div>
+        <div class="bttn">
+        <button type="submit" class="btn submit-btn submitting">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- contact form done -->
+</main>
     </div>
   </template>
   
@@ -13,5 +67,137 @@ export default {
 </script>
 
 <style scoped>
+/* Image styling for contact page */
 
+.pfp {
+  width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 50%;
+  border-color: black;
+}
+.bttn {
+  width: 90% !important;
+}
+.logo {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-ting {
+  width: 90%;
+}
+
+.second {
+  margin-bottom: 5rem;
+  background-color: whitesmoke;
+  color: white !important;
+}
+
+form h2 {
+  background-color: #38E54D;
+  color: white;
+  margin: 18px;
+  margin: 24px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact-box {
+  margin-top: -0.9rem !important;
+}
+
+.bot {
+  padding-top: 1rem;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.bot p {
+  color: black;
+}
+
+.hijab img {
+  width: 20rem;
+  height: 27rem;
+}
+
+.btn-contact {
+  box-shadow: 4px 4px 10px #ccc5b9, -4px -4px 10px#FFFCF2;
+  padding: 3px;
+  background-color:#38E54D ;
+}
+
+.submit-btn {
+  width: 100% ;
+  position: relative;
+  display: flex;
+  margin-left: 0 ;
+}
+.logo-contact {
+  width: 55%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  border-radius: 50% 46% / 38% 40%;
+  height: 220px;
+  position: relative;
+  top: 70px;
+  left: 25%;
+}
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.hijab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding-top: 2rem;
+  padding-bottom: 1.4rem;
+}
+
+#contactPage {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+#main-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitting {
+  background-color:#38E54D ;
+  width: 100% ;
+  margin-top: 2rem ;
+  margin-bottom: 2.4rem ;
+  color: white ;
+}
+.submitting:hover {
+  box-shadow: 0 0 15px#FFFCF2;
+}
+
+#form-box{
+  margin-top: 28px;
+}
 </style>
