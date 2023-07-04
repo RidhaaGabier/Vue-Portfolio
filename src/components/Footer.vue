@@ -4,7 +4,7 @@
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
+          <div class="me-5 d-none d-lg-block" style="color: #000;">
             <span>Get connected with me on social networks:</span>
           </div>
           <!-- Left -->
@@ -12,16 +12,16 @@
           <!-- Right -->
           <div>
             <a href="https://www.facebook.com/facebook/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-facebook-f" style="color: #000;"></i>
             </a>
             <a href="https://twitter.com/explore?lang=en" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter" style="color: #000;"></i>
             </a>
             <a href="https://www.instagram.com/clothingshoponline/?hl=en" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram" style="color: #000;"></i>
             </a>
             <a href="https://github.com/RidhaaGabier?tab=repositories" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-github"></i>
+              <i class="fab fa-github" style="color: black;"></i>
             </a>
           </div>
           <!-- Right -->
@@ -30,7 +30,7 @@
       
         <!-- Section: Links  -->
         <section class="">
-          <div class="container text-center text-md-start mt-5">
+          <div class="container text-center text-md-start mt-5" style="color: #000;">
             <!-- Grid row -->
             <div class="row mt-3">
               <!-- Grid column -->
@@ -111,7 +111,7 @@
         <!-- Section: Links  -->
       
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> © 2023 Copyright</div>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: #000;"> © 2023 Copyright</div>
          
         <!-- Copyright -->
       </footer>

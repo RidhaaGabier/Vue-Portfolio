@@ -5,7 +5,7 @@
 <div id="contact" class="row">
   <div class="col first">
     <div class="card left">
-      <div class="hide hijab">
+      <div class="hijab">
         <img src="https://i.postimg.cc/qBnMwVTy/C12-Ridhaa-Gabier-2.jpg" loading="lazy" class="pfp" />
       </div>
 
@@ -28,7 +28,7 @@
 
       <form action="https://formspree.io/f/xknayqyj" method="POST">
 
-        <h2 class="card p-3 heading-text pink-bg border-2 text-center" style="border: none;">Contact Me!</h2>
+        <h2 id="slideInLeft" class="card p-3 heading-text pink-bg border-2 text-center" style="border: none;">Contact Me!</h2>
         <div class="input-ting">
           <label class="form-label heading-text">Name:</label>
           <input type="text" name="Name" class="form-control light-bg border-2" placeholder="Please enter your name"
@@ -69,15 +69,17 @@ export default {
 <style scoped>
 /* Image styling for contact page */
 
+.col{
+  padding: 30px;
+}
 .pfp {
   width: 100%;
-  border-style: solid;
-  border-width: 5px;
   border-radius: 50%;
-  border-color: black;
+  box-shadow: 8px 8px 15px whitesmoke, -4px -4px 15px silver;
+  background: whitesmoke;
 }
 .bttn {
-  width: 90% !important;
+  width: 90% ;
 }
 .logo {
   margin: 0;
@@ -96,7 +98,7 @@ export default {
 .second {
   margin-bottom: 5rem;
   background-color: whitesmoke;
-  color: white !important;
+  color: black;
 }
 
 form h2 {
@@ -131,10 +133,10 @@ form {
   height: 27rem;
 }
 
-.btn-contact {
+.btn-contact{
   box-shadow: 4px 4px 10px #ccc5b9, -4px -4px 10px#FFFCF2;
   padding: 3px;
-  background-color:#38E54D ;
+  background-color:#38E54D;
 }
 
 .submit-btn {
@@ -194,10 +196,33 @@ form {
   color: white ;
 }
 .submitting:hover {
-  box-shadow: 0 0 15px#FFFCF2;
+  box-shadow: 4px 4px 10px #ccc5b9, -4px -4px 10px#FFFCF2;
 }
 
 #form-box{
   margin-top: 28px;
+}
+@keyframes slideInLeft{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+#slideInLeft{
+  animation:slideInLeft 1s ease-in;
+}
+
+@media(max-width:300px){
+.hijab img{
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+.hijab{
+  padding: 10px;
+}
 }
 </style>

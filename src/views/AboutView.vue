@@ -1,116 +1,40 @@
 <template>
   <div class="heading">
-  <h1>About Me</h1>
-</div>
-<div class="container-about">
+  <h1 id="slideInLeft">About Me</h1>
+
+  <div class="container-about">
   <section class="about">
     <div class="about-image">
       <img src="https://i.postimg.cc/qBnMwVTy/C12-Ridhaa-Gabier-2.jpg" alt="Image">
     </div>
-    <div class="about-content">
+    <div id="App" class="about-content">
           
-            <h2 class="m-heading" data-aos="fade-right">Software Developer</h2>
-            <p>My name is <b class="text-warning">Ridhaa Gabier </b>,I'm hard working and dedicated to
-              achieve the goals my heart desires.I'm a <b class="text-warning">trustworthy</b> and loyal companion and love working in groups.I am an <b class="text-warning">asset</b> to my team and will ensure quick assistance to those in need.</p>
+
+      <div id="bounce" class="mb-1 gray-bg" v-show="!showFlag">
+            <h2 class="m-heading">Software Developer</h2>
+            <p>My name is <b class="text-success">Ridhaa Gabier </b>,I'm hard working and dedicated to
+              achieve the goals my heart desires.I'm a <b class="text-success">trustworthy</b> and loyal companion and love working in groups.I am an <b class="text-success">asset</b> to my team and will ensure quick assistance to those in need.</p>
 
             <p>I consider myself a builder.I find it fascinating to learn how things work.It's my passion to strive towards success to exceed the expectations and to break beyond my limitations that my mind holds.My <b
-                class="text-warning">strength's</b> are that I'm a <b class="text-warning">creative problem
-                solver</b> and able to handle multiple tasks on a daily basis.I'm determined and may be competitive at times as there is always something one can learn.I am a dependable person who is great at <b class="text-warning">time management</b>.I love learning new things and doing projects on the side
-              for self interests.Despite all my qualities i am very <b class="text-warning">empathic</b> towards my fellow
+                class="text-success">strength's</b> are that I'm a <b class="text-success">creative problem
+                solver</b> and able to handle multiple tasks on a daily basis.I'm determined and may be competitive at times as there is always something one can learn.I am a dependable person who is great at <b class="text-success">time management</b>.I love learning new things and doing projects on the side
+              for self interests.Despite all my qualities i am very <b class="text-success">empathic</b> towards my fellow
               colleges and people i work for in general.</p>
+              <p class="hero_btn" @click="toggleShow">Show More</p>
+       </div>
 
-              <p> I enjoy online gaming and building up small computer projects.I truly have a passion for <b class="text-warning">coding and designing websites</b> as i find it very enjoyable.I am skilled in in multiple aspects such as having knowledge about general <b class="text-warning">hardware and software</b> and how it operates, able to work in a fast paced environment and know how to operate devices such as computers,laptops etc.I am quite skilled in <b class="text-warning">HTML , CSS , Git , GitHub, Bootstrap, JavaScript and Vue JS</b>.Currently I'm studying at <b class="text-warning">Life Choices Academy</b> to improve my technical and social skills and eventually become a certified Software Developer.</p>
+       <div class="mb-1 gray-bg" v-show="showFlag">
+              <p> I enjoy online gaming and building up small computer projects.I truly have a passion for <b class="text-success">coding and designing websites</b> as i find it very enjoyable.I am skilled in in multiple aspects such as having knowledge about general <b class="text-success">hardware and software</b> and how it operates, able to work in a fast paced environment and know how to operate devices such as computers,laptops etc.I am quite skilled in <b class="text-success">HTML , CSS , Git , GitHub, Bootstrap, JavaScript and Vue JS</b>.Currently I'm studying at <b class="text-success">Life Choices Academy</b> to improve my technical and social skills and eventually become a certified Software Developer.</p>
                 
-                <p>I am experienced in a working environment as i worked in the past for a company called <b class="text-warning">SOS Packaging Pty Ltd</b>.My position was an admin/receptionist and done liaising telephonically with clients,filling,post and data capturing.I have also promoted people via social media and worked as a part time streamer on <b class="text-warning">YouTube</b> for my gaming channel.</p>
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
+                <p style="border-bottom: 5px solid black; padding-bottom: 30px; margin-bottom: 50px;">I am experienced in a working environment as i worked in the past for a company called <b class="text-success">SOS Packaging Pty Ltd</b>.My position was an admin/receptionist and done liaising telephonically with clients,filling,post and data capturing.I have also promoted people via social media and worked as a part time streamer on <b class="text-success">YouTube</b> for my gaming channel.</p>
+                <p class="hero_btn" @click="toggleShow">Show Less</p>
+        </div>
+             
     </div>
   </section>
 </div>
+</div>
+ 
 
 </template>
 
@@ -118,11 +42,58 @@
 <script>
 export default {
   name: 'AboutView',
-  components: {}
-}
+  data(){
+    return{
+      showFlag:false
+    };
+  },
+  methods:{
+    toggleShow(){
+      this.showFlag=!this.showFlag;
+    }
+  }
+};
+
+
 </script>
 
 <style scoped>
+
+@keyframes slideInLeft{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+#slideInLeft{
+  animation:slideInLeft 1s ease-in;
+}
+
+.hero_btn{
+  width: 170px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: green;
+  background: black;
+  border-radius: 40px 15px 40px 10px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.hero_btn:hover{
+  background: #38E54D;
+  color: whitesmoke;
+  transform: scale(1.02);
+}
+
+
 /* About Page */
 .heading {
   width: 90%;
@@ -148,27 +119,6 @@ export default {
   width: 100%;
 }
 
-.line-head::after {
-  content: "";
-  margin: 0 auto;
-  background-color: #333333;
-  position: absolute;
-  display: block;
-  height: 4px;
-  width: 18%;
-  position: relative;
-}
-
-.line-heading::after {
-  content: "";
-  margin: 0 auto;
-  background-color: #333333;
-  position: absolute;
-  display: block;
-  height: 4px;
-  width: 31%;
-  position: relative;
-}
 
 .container-about {
   width: 90%;
@@ -254,6 +204,7 @@ export default {
   .about-image {
     margin: 0px;
     margin-bottom: 15px;
+    
   }
 
   .about-content {
