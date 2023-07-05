@@ -5,15 +5,23 @@ export default createStore({
     slide:null,
   },
   mutations: {
-    setSlides: (state,slide) => {
+    setSlide: (state,slide) => {
       state.slide = slide;
     }
   },
   actions: {
     getSlides: async (context) => {
-      fetch("")
-      .then((res) => res.json())
-      .then((slide) => context.commit("setSlide", slide));
+      try{
+        fetch("https://ridhaagabier.github.io/customer.json")
+        .then((res) => res.json())
+        .then((slide) => {
+          let {testimonials} = slide
+          context.commit("setSlide", testimonials)
+        });
+
+      } catch (error){
+        console.error(error)
+      }
     }
   },
  

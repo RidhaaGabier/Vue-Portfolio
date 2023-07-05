@@ -52,20 +52,20 @@
                   Projects
                 </h6>
                 <p>
-                  <router-link to="/products" class="text-reset">HTML</router-link>
-                  <router-link to="/products" class="text-reset"></router-link>
+                  <router-link to="/project" class="text-reset">HTML</router-link>
+                  <router-link to="/project" class="text-reset"></router-link>
                 </p>
                 <p>
-                  <router-link to="/products" class="text-reset">Boostrap</router-link>
-                  <router-link to="/products" class="text-reset"></router-link>
+                  <router-link to="/project" class="text-reset">Boostrap</router-link>
+                  <router-link to="/project" class="text-reset"></router-link>
                 </p>
                 <p>
-                  <router-link to="/products" class="text-reset">JavaScript</router-link>
-                  <router-link to="/products" class="text-reset"></router-link>
+                  <router-link to="/project" class="text-reset">JavaScript</router-link>
+                  <router-link to="/project" class="text-reset"></router-link>
                 </p>
                 <p>
-                  <router-link to="/products" class="text-reset">VueJS</router-link>
-                  <router-link to="/products" class="text-reset"></router-link>
+                  <router-link to="/project" class="text-reset">VueJS</router-link>
+                  <router-link to="/project" class="text-reset"></router-link>
                 </p>
               </div>
               <!-- Grid column -->

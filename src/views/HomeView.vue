@@ -96,12 +96,15 @@ text-transform: capitalize;
 @keyframes textTyper{
   0%{
   left: 0;
+  width: 100%;
 }
   40%, 60%{
     left: 102%;
+    width: 0%;
   }
   100%{
     left: 0;
+    width: 100%;
   }
 }
 .hero_btn{

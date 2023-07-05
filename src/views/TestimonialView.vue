@@ -1,34 +1,24 @@
 <template>
     <div class="testimonial">
       <h1 id="slideInLeft">Testimonials</h1>
-
-      <!-- <div v-if="slide" class="slide-details">
-    <img :src="slide.image_url" :alt= "slide.title">
-
-    <div>
-
-        <h2>{{ slide.title }}</h2>
-        <p>Description {{ slide.desc }}</p>
-
-    </div>
-     </div> -->
+      <slideShow :slide="slide"/>
    </div>
   </template>
-  
+    
 
 <script>
 import  slideShow from '@/components/Carousel.vue'
 
 export default {
   name: 'TestimonialView',
-  props: ["id"],
+  // props: ["id"],
     computed: {
         slide() {
             return this.$store.state.slide
         }
     },
     mounted(){
-        return this.$store.dispatch("getSlide",this.id)
+        return this.$store.dispatch("getSlides")
     },
     components:{slideShow}
 }

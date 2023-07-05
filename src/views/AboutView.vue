@@ -1,78 +1,120 @@
 <template>
   <div class="heading">
-  <h1 id="slideInLeft">About Me</h1>
+    <h1 id="slideInLeft">About Me</h1>
 
-  <div class="container-about">
-  <section class="about">
-    <div class="about-image">
-      <img src="https://i.postimg.cc/qBnMwVTy/C12-Ridhaa-Gabier-2.jpg" alt="Image">
-    </div>
-    <div id="App" class="about-content">
-          
-
-      <div id="bounce" class="mb-1 gray-bg" v-show="!showFlag">
-            <h2 class="m-heading">Software Developer</h2>
-            <p>My name is <b class="text-success">Ridhaa Gabier </b>,I'm hard working and dedicated to
-              achieve the goals my heart desires.I'm a <b class="text-success">trustworthy</b> and loyal companion and love working in groups.I am an <b class="text-success">asset</b> to my team and will ensure quick assistance to those in need.</p>
-
-            <p>I consider myself a builder.I find it fascinating to learn how things work.It's my passion to strive towards success to exceed the expectations and to break beyond my limitations that my mind holds.My <b
-                class="text-success">strength's</b> are that I'm a <b class="text-success">creative problem
-                solver</b> and able to handle multiple tasks on a daily basis.I'm determined and may be competitive at times as there is always something one can learn.I am a dependable person who is great at <b class="text-success">time management</b>.I love learning new things and doing projects on the side
-              for self interests.Despite all my qualities i am very <b class="text-success">empathic</b> towards my fellow
-              colleges and people i work for in general.</p>
-              <p class="hero_btn" @click="toggleShow">Show More</p>
-       </div>
-
-       <div class="mb-1 gray-bg" v-show="showFlag">
-              <p> I enjoy online gaming and building up small computer projects.I truly have a passion for <b class="text-success">coding and designing websites</b> as i find it very enjoyable.I am skilled in in multiple aspects such as having knowledge about general <b class="text-success">hardware and software</b> and how it operates, able to work in a fast paced environment and know how to operate devices such as computers,laptops etc.I am quite skilled in <b class="text-success">HTML , CSS , Git , GitHub, Bootstrap, JavaScript and Vue JS</b>.Currently I'm studying at <b class="text-success">Life Choices Academy</b> to improve my technical and social skills and eventually become a certified Software Developer.</p>
-                
-                <p style="border-bottom: 5px solid black; padding-bottom: 30px; margin-bottom: 50px;">I am experienced in a working environment as i worked in the past for a company called <b class="text-success">SOS Packaging Pty Ltd</b>.My position was an admin/receptionist and done liaising telephonically with clients,filling,post and data capturing.I have also promoted people via social media and worked as a part time streamer on <b class="text-success">YouTube</b> for my gaming channel.</p>
-                <p class="hero_btn" @click="toggleShow">Show Less</p>
+    <div class="container-about">
+      <section class="about">
+        <div class="about-image">
+          <img
+            src="https://i.postimg.cc/qBnMwVTy/C12-Ridhaa-Gabier-2.jpg"
+            alt="Image"
+          />
         </div>
-             
+        <div id="App" class="about-content">
+          <div id="bounce" class="mb-1 gray-bg">
+            <h2 class="m-heading">Software Developer</h2>
+            <p>
+              My name is <b class="text-success">Ridhaa Gabier </b>,I'm hard
+              working and dedicated to achieve the goals my heart desires.I'm a
+              <b class="text-success">trustworthy</b> and loyal companion and
+              love working in groups.I am an
+              <b class="text-success">asset</b> to my team and will ensure quick
+              assistance to those in need.
+            </p>
+
+            <p>
+              I consider myself a builder.I find it fascinating to learn how
+              things work.It's my passion to strive towards success to exceed
+              the expectations and to break beyond my limitations that my mind
+              holds.My <b class="text-success">strength's</b> are that I'm a
+              <b class="text-success">creative problem solver</b> and able to
+              handle multiple tasks on a daily basis.I'm determined and may be
+              competitive at times as there is always something one can learn.I
+              am a dependable person who is great at
+              <b class="text-success">time management</b>.I love learning new
+              things and doing projects on the side for self interests.Despite
+              all my qualities i am very
+              <b class="text-success">empathic</b> towards my fellow colleges
+              and people i work for in general.
+            </p>
+            <p class="hero_btn" @click="toggleShow" v-show="!showFlag">
+              Show More
+            </p>
+          </div>
+
+          <div class="mb-1 gray-bg" v-show="showFlag">
+            <p>
+              I enjoy online gaming and building up small computer projects.I
+              truly have a passion for
+              <b class="text-success">coding and designing websites</b> as i
+              find it very enjoyable.I am skilled in in multiple aspects such as
+              having knowledge about general
+              <b class="text-success">hardware and software</b> and how it
+              operates, able to work in a fast paced environment and know how to
+              operate devices such as computers,laptops etc.I am quite skilled
+              in
+              <b class="text-success"
+                >HTML , CSS , Git , GitHub, Bootstrap, JavaScript and Vue JS</b
+              >.Currently I'm studying at
+              <b class="text-success">Life Choices Academy</b> to improve my
+              technical and social skills and eventually become a certified
+              Software Developer.
+            </p>
+
+            <p
+              style="
+                border-bottom: 5px solid black;
+                padding-bottom: 30px;
+                margin-bottom: 50px;
+              "
+            >
+              I am experienced in a working environment as i worked in the past
+              for a company called
+              <b class="text-success">SOS Packaging Pty Ltd</b>.My position was
+              an admin/receptionist and done liaising telephonically with
+              clients,filling,post and data capturing.I have also promoted
+              people via social media and worked as a part time streamer on
+              <b class="text-success">YouTube</b> for my gaming channel.
+            </p>
+            <p class="hero_btn" @click="toggleShow">Show Less</p>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</div>
-</div>
- 
-
+  </div>
 </template>
-
 
 <script>
 export default {
-  name: 'AboutView',
-  data(){
-    return{
-      showFlag:false
+  name: "AboutView",
+  data() {
+    return {
+      showFlag: false,
     };
   },
-  methods:{
-    toggleShow(){
-      this.showFlag=!this.showFlag;
-    }
-  }
+  methods: {
+    toggleShow() {
+      this.showFlag = !this.showFlag;
+    },
+  },
 };
-
-
 </script>
 
 <style scoped>
-
-@keyframes slideInLeft{
-  from{
+@keyframes slideInLeft {
+  from {
     transform: translateX(-300px);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
 
-#slideInLeft{
-  animation:slideInLeft 1s ease-in;
+#slideInLeft {
+  animation: slideInLeft 1s ease-in;
 }
 
-.hero_btn{
+.hero_btn {
   width: 170px;
   height: 45px;
   display: flex;
@@ -87,12 +129,11 @@ export default {
   margin-top: 15px;
   text-decoration: none;
 }
-.hero_btn:hover{
-  background: #38E54D;
+.hero_btn:hover {
+  background: #38e54d;
   color: whitesmoke;
   transform: scale(1.02);
 }
-
 
 /* About Page */
 .heading {
@@ -118,7 +159,6 @@ export default {
   height: 4px;
   width: 100%;
 }
-
 
 .container-about {
   width: 90%;
@@ -172,7 +212,7 @@ export default {
   .heading {
     padding: 0px 20px;
   }
-  .m-heading{
+  .m-heading {
     padding-left: 40px;
   }
   .line-head::after {
@@ -204,7 +244,6 @@ export default {
   .about-image {
     margin: 0px;
     margin-bottom: 15px;
-    
   }
 
   .about-content {
@@ -215,7 +254,5 @@ export default {
   .about-content .read-more {
     font-size: 15px;
   }
-
 }
-
 </style>
