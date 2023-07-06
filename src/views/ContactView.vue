@@ -90,6 +90,9 @@ export default {
 </script>
 
 <style scoped>
+*{
+  font-family: "Poppins";
+}
 /* Image styling for contact page */
 
 .col {

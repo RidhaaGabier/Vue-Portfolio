@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style scoped>
+*{
+  font-family: "Poppins";
+}
 .testimonial {
   width: 90%;
   display: flex;

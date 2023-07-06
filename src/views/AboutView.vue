@@ -114,6 +114,9 @@ export default {
   animation: slideInLeft 1s ease-in;
 }
 
+*{
+  font-family: "Poppins";
+}
 .hero_btn {
   width: 170px;
   height: 45px;

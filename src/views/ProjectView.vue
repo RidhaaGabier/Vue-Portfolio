@@ -30,12 +30,17 @@ export default {
 </script>
 
 <style scoped>
-/* .project {
+*{
+  font-family: "Poppins";
+}
+.project {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-} */
+  margin: 10px;
+}
+
 .project h1 {
   font-size: 50px;
   color: black;
