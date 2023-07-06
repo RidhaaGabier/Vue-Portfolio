@@ -1,43 +1,49 @@
 <template>
-    <div class="project">
-      <h1 id="slideInLeft">My Projects</h1>
-      <!-- <projectSite :project="project" /> -->
+  <div class="project">
+    <h1 id="slideInLeft">My Projects</h1>
+    <div class="container">
+      <div class="row">
+        <div v-for="project in projects" :key="project.id" class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <projectSite :project="project" />
+        </div>
+      </div>
+
     </div>
-  </template>
-  
+  </div>
+</template>
 
 <script>
-import projectSite from '@/components/Card.vue'
+import projectSite from "@/components/Card.vue";
 
 export default {
-  name: 'ProjectView',
+  name: "ProjectView",
   computed: {
-    project() {
-      return this.$store.state.project;
+    projects() {
+      return this.$store.state.projects;
     },
   },
   mounted() {
-    return this.$store.dispatch("getProjects")
+    return this.$store.dispatch("getProjects");
   },
-  components:{projectSite}
-}
+  components: { projectSite },
+};
 </script>
 
 <style scoped>
-
-.project {
-  width: 90%;
+/* .project {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px auto;
-}
+} */
 .project h1 {
   font-size: 50px;
   color: black;
   margin-bottom: 20px;
   position: relative;
+}
+.text {
+  margin-top:100px !important;
 }
 .project h1::after {
   content: "";
@@ -48,17 +54,17 @@ export default {
   height: 4px;
   width: 100%;
 }
-@keyframes slideInLeft{
-  from{
+@keyframes slideInLeft {
+  from {
     transform: translateX(-300px);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
 
-#slideInLeft{
-  animation:slideInLeft 1s ease-in;
-}
 
+#slideInLeft {
+  animation: slideInLeft 1s ease-in;
+}
 </style>

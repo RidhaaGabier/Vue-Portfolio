@@ -2,17 +2,24 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    // slide:null,
-  
-
+    slide: null,
+    projects: null,
+    education: null,
+    skills: null,
   },
   mutations: {
     setSlide: (state,slide) => {
       state.slide = slide;
     },
-    // setProject: (state,project) => {
-    //   state.project = project;
-    // }
+    setProjects: (state,projects) => {
+      state.projects = projects;
+    },
+    setEducation: (state, education) => {
+      state.education = education;
+    },
+    setSkills: (state, skills) => {
+      state.skills = skills;
+    },
   },
   actions: {
     getSlides: async (context) => {
@@ -29,19 +36,47 @@ export default createStore({
       }
     },
 
-    // getProjects: async (context) => {
-    //   try{
-    //     fetch("https://ridhaagabier.github.io/customer.json")
-    //     .then((res) => res.json())
-    //     .then((project) => {
-    //       let {projects} = project
-    //       context.commit("setProject", projects)
-    //     });
+    getProjects: async (context) => {
+      try{
+        fetch("https://ridhaagabier.github.io/customer.json")
+        .then((res) => res.json())
+        .then((project) => {
+          let {projects} = project
+          context.commit("setProjects", projects)
+        });
 
-    //   } catch (error){
-    //     console.error(error)
-    //   }
-    // },
+      } catch (error){
+        console.error(error)
+      }
+    },
+
+    getEducation: async (context) => {
+      try{
+        fetch("https://ridhaagabier.github.io/customer.json")
+        .then((res) => res.json())
+        .then((info) => {
+          let {education} = info
+          context.commit("setEducation", education)
+        });
+
+      } catch (error){
+        console.error(error)
+      }
+    },
+
+    getSkills: async (context) => {
+      try{
+        fetch("https://ridhaagabier.github.io/customer.json")
+        .then((res) => res.json())
+        .then((info) => {
+          let {skills} = info
+          context.commit("setSkills", skills)
+        });
+
+      } catch (error){
+        console.error(error)
+      }
+    },
 
     
   },

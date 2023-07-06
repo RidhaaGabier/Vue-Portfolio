@@ -1,27 +1,26 @@
 <template>
-    <div class="testimonial">
-      <h1 id="slideInLeft">Testimonials</h1>
-      <slideShow :slide="slide"/>
-   </div>
-  </template>
-    
+  <div class="testimonial">
+    <h1 id="slideInLeft">Testimonials</h1>
+    <slideShow :slide="slide" />
+  </div>
+</template>
 
 <script>
-import  slideShow from '@/components/Carousel.vue'
+import slideShow from "@/components/Carousel.vue";
 
 export default {
-  name: 'TestimonialView',
+  name: "TestimonialView",
   // props: ["id"],
-    computed: {
-        slide() {
-            return this.$store.state.slide
-        }
+  computed: {
+    slide() {
+      return this.$store.state.slide;
     },
-    mounted(){
-        return this.$store.dispatch("getSlides")
-    },
-    components:{slideShow}
-}
+  },
+  mounted() {
+    return this.$store.dispatch("getSlides");
+  },
+  components: { slideShow },
+};
 </script>
 
 <style scoped>
@@ -48,17 +47,16 @@ export default {
   height: 4px;
   width: 100%;
 }
-@keyframes slideInLeft{
-  from{
+@keyframes slideInLeft {
+  from {
     transform: translateX(-300px);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
 
-#slideInLeft{
-  animation:slideInLeft 1s ease-in;
+#slideInLeft {
+  animation: slideInLeft 1s ease-in;
 }
-
 </style>
