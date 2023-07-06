@@ -1,28 +1,40 @@
 {
   "skills": [
-    { "id": "1", "course": "HTML", "percent": "75" },
+    { "id": "1",
+     "course": "HTML",
+      "percent": "75",
+      "color": "danger"
+     },
 
-    { "id": "2", "course": "CSS", "percent": "75" },
+    { "id": "2",
+     "course": "CSS",
+      "percent": "75",
+       "color": "info"
+     },
     {
       "id": "3",
       "course": "Bootstrap",
-      "percent": "75"
+      "percent": "75",
+      "color": "purple"
       
     },
     {
       "id": "4",
       "course": "GIT",
-      "percent": "50"
+      "percent": "50",
+      "color": "dark"
     },
     {
       "id": "5",
       "course": "JavaScript",
-      "percent": "75"
+      "percent": "75",
+      "color": "warning"
     },
     {
       "id": "6",
       "course": "VueJS",
-      "percent": "75"
+      "percent": "75",
+      "color": "success"
     }
   ],
   "education": [

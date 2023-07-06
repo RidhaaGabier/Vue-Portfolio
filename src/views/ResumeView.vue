@@ -15,21 +15,16 @@
   </div>
   <!-- end of time line -->
   
+
   <!-- start of skill bar -->
-  <div v-for="skill in skills" :key="skill.id">
-
-  <div class="progress" role="progressbar" aria-label="Success striped example" :aria-valuenow="skill.percent" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar progress-bar-striped bg-success" :style="'width: ' + skill.percent">
+  
+  <div class="progress-container" v-for="skill in skills" :key="skill.id">
+  <div class="progress" role="progressbar" aria-label="Animated striped example" :aria-valuenow="skill.percent" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" :style="'width: ' + skill.percent + '%'">
     {{ skill.course }}
-    </div>
   </div>
-
-  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
 </div>
-
 </div>
-
   <!-- end of skill bar -->
   </div>
 </template>
@@ -42,6 +37,9 @@ export default {
     education() {
       return this.$store.state.education;
     },
+    skills() {
+      return this.$store.state.skills
+    }
   },
   mounted() {
     this.$store.dispatch("getEducation");
