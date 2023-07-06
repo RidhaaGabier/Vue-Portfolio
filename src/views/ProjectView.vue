@@ -1,14 +1,25 @@
 <template>
     <div class="project">
       <h1 id="slideInLeft">My Projects</h1>
+      <!-- <projectSite :project="project" /> -->
     </div>
   </template>
   
 
 <script>
+import projectSite from '@/components/Card.vue'
+
 export default {
   name: 'ProjectView',
-  components: {}
+  computed: {
+    project() {
+      return this.$store.state.project;
+    },
+  },
+  mounted() {
+    return this.$store.dispatch("getProjects")
+  },
+  components:{projectSite}
 }
 </script>
 

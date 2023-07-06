@@ -1,32 +1,5 @@
 <template>
-  <!-- <router-link :to="{name: 'slide', params:{id: slide[0]?.id}}"> -->
-  
 
-  <!-- <div id="slide" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img :src="slide.image_url" class="d-block w-100" alt="Colleges">
-    </div>
-  </div>
-  <h3>
-      {{ slide.title }}
-  </h3>
-  <p>Description: {{ slide.desc }}</p> -->
-<!-- </div> -->
-
-
-
-  
-  <!-- </router-link> -->
-  <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item" v-for="data in slide" :key="data.id" :class="{active : data.id == 1}">
-      <h4 class="lead">{{ data.title }}</h4>
-      <img :src="data.image_url" class="d-block" :alt="data.title" width="300">
-      <p class="lead w-75 mx-auto">{{ data.desc }}</p>
-    </div>
-  </div>
-</div> -->
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade">
   <div class="carousel-inner">

@@ -1,13 +1,13 @@
 <template>
     <!-- <router-link :to="{ name: 'project', params: { id: project.id } }"> -->
       <div class="box p-5 m-5 col-3">
-        <img :src="project.image" :alt="project.name" class="image" />
+        <img :src="project.image_url" :alt="project.title" class="image" />
         <div class="middle">
           <div class="textbox p-5 m-5">
-            <h1 class="text">{{ project.name }}</h1>
-            <h2 class="text">{{ project.desc }} ( {{ project.type }})</h2>
-            <a :href="project.live" target="_blank"><button class="But">GitHub</button></a>
-            <a :href="project.live" target="_blank"> <button class="But">View Site</button> </a>
+            <h1 class="text">{{ project.title }}</h1>
+            <h2 class="text">{{ project.desc }}</h2>
+            <a :href="project.live" target="_blank"> <button class="But">View Site</button></a>
+            <a :href="project.github" target="_blank"><button class="But">GitHub</button></a>
           </div>
         </div>
       </div>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  props: ["project"]
+  props: ["project"],
 };
 </script>
 
