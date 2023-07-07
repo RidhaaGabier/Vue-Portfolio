@@ -148,7 +148,7 @@ export default {
 
 .timeline {
   position: relative;
-  padding: 100px;
+  margin: 10px;
   border-radius: 10px;
 }
 
@@ -229,7 +229,9 @@ export default {
 
 @media screen and (max-width: 700px){
 
-
+  .resume h1{
+    font-size: 30px;
+  }
   .timeline-item {
   left: 0px;
 }
@@ -271,7 +273,7 @@ export default {
   padding: 0px;
 }
 .progress {
-  width: 300px;
+  width: 250px;
 }
 }
 </style>

@@ -98,6 +98,7 @@ export default {
 .col {
   padding: 30px;
 }
+
 .pfp {
   width: 100%;
   border-radius: 50%;
@@ -107,10 +108,7 @@ export default {
 .bttn {
   width: 90%;
 }
-.logo {
-  margin: 0;
-  padding: 0;
-}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -130,8 +128,7 @@ export default {
 form h2 {
   background-color: green;
   color: white;
-  margin: 18px;
-  margin: 24px;
+  margin: 5px;
 }
 
 form {
@@ -139,9 +136,16 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* height: 600px; */
+  margin-bottom: 1px;
+  padding-top: 20px;
+  padding-bottom: 0px ;
+  line-height: 65px;
+
 }
 #contact-box {
-  margin-top: -0.9rem !important;
+  margin-top: 1rem !important;
+  padding-bottom: 0px;
 }
 
 .bot {
@@ -164,20 +168,7 @@ form {
   position: relative;
   display: flex;
   margin-left: 0;
-}
-.logo-contact {
-  width: 55%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1000px;
-  border-radius: 50% 46% / 38% 40%;
-  height: 220px;
-  position: relative;
-  top: 70px;
-  left: 25%;
+  margin-top: 80px !important;
 }
 #contact {
   display: flex;
@@ -221,6 +212,7 @@ form {
 
 #form-box {
   margin-top: 28px;
+  line-height: 40px;
 }
 @keyframes slideInLeft {
   from {
@@ -244,5 +236,6 @@ form {
   .hijab {
     padding: 10px;
   }
+
 }
 </style>

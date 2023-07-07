@@ -24,9 +24,13 @@ export default {
 </script>
 
 <style scoped>
+p {
+  text-wrap: balance;
+}
 *{
   font-family: "Poppins";
 }
+
 .testimonial {
   width: 90%;
   display: flex;
@@ -35,6 +39,7 @@ export default {
   flex-direction: column;
   margin: 20px auto;
 }
+
 .testimonial h1 {
   font-size: 50px;
   color: black;
@@ -75,5 +80,6 @@ export default {
   #slideInLeft{
     font-size: 30px;
   }
+ 
 }
 </style>

@@ -20,21 +20,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul id="navbar" class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li id="slideInLeft"><router-link to="/">Home |</router-link></li>
+          <li id="slideInLeft"><router-link to="/">Home </router-link></li>
           <li id="slideInLeft">
-            <router-link to="/about">About |</router-link>
+            <router-link to="/about">About </router-link>
           </li>
           <li id="slideInLeft">
-            <router-link to="/project">Projects |</router-link>
+            <router-link to="/project">Projects </router-link>
           </li>
           <li id="slideInLeft">
-            <router-link to="/resume">Resume |</router-link>
+            <router-link to="/resume">Resume </router-link>
           </li>
           <li id="slideInLeft">
-            <router-link to="/testimonial">Testimonial |</router-link>
+            <router-link to="/testimonial">Testimonial </router-link>
           </li>
           <li id="slideInLeft">
-            <router-link to="/contact">Contact |</router-link>
+            <router-link to="/contact">Contact </router-link>
           </li>
         </ul>
       </div>
@@ -56,8 +56,8 @@
   animation: slideInLeft 1s ease-in;
 }
 
-.nav-logo {
-  width: 3rem;
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 
 nav {
@@ -96,5 +96,8 @@ nav {
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

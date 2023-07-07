@@ -27,6 +27,7 @@ export default {
 .box {
   height: 150px;
   margin-bottom: 15px;
+  box-shadow: 6px 6px 10px whitesmoke, -6px -6px 10px silver;
 }
 .box img.image {
   opacity: 1;
@@ -56,14 +57,14 @@ export default {
   margin-left: 30px;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 12px;
   color: green;
   background: black;
   border-radius: 40px 15px 40px 10px;
   text-transform: capitalize;
   letter-spacing: 0.3px;
-  margin-top: 15px;
-  padding-bottom: 25px;
+  margin-top: 6px;
+  padding-bottom: 24px;
 }
 .btn:hover {
   background: #38e54d;

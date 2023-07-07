@@ -79,6 +79,9 @@ export default {
   margin:20px;
   margin-bottom: 25px ;
   }
+  .project h1{
+    font-size: 30px;
+  }
 
 }
 </style>

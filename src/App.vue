@@ -1,7 +1,10 @@
 <template>
-<Navbar/>
+  <div>
+  <Navbar/>
   <router-view/>
   <Footer/>
+</div>
+
 </template>
 
 <script>

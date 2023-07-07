@@ -23,7 +23,7 @@
       data-bs-target="#carouselExampleFade"
       data-bs-slide="prev">
 
-      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/back.png" alt="back"/>
+      <img class="arrow" width="50" height="50" src="https://img.icons8.com/ios-filled/50/back.png" alt="back"/>
       <span class="visually-hidden">Previous</span>
     </button>
     <button
@@ -32,7 +32,7 @@
       data-bs-target="#carouselExampleFade"
       data-bs-slide="next">
 
-      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/forward--v1.png" alt="forward--v1"/>
+      <img class="arrow" width="50" height="50" src="https://img.icons8.com/ios-filled/50/forward--v1.png" alt="forward--v1"/>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
@@ -62,7 +62,8 @@ export default {
 
 .lead {
   font-family: "Poppins", sans-serif;
-  font-size: 25px;
+  font-size: 22px;
+  font-weight: 500;
   margin: 18px;
   display: flex;
   justify-content: center;
@@ -73,5 +74,23 @@ export default {
 
 p {
   text-wrap: balance;
+}
+@media screen and (max-width: 700px){
+  .carousel-item img{
+    margin: 0px;
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+  }
+.arrow{
+  widows: 100%;
+  height: 30px;
+  padding: 2px;
+  margin-right: 10px;
+}
+.lead{
+  font-size: 13px;
+  font-weight: 600;
+}
 }
 </style>

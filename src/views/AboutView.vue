@@ -133,6 +133,9 @@ export default {
   margin-top: 15px;
   text-decoration: none;
 }
+p {
+  text-wrap: balance;
+}
 .hero_btn:hover {
   background: #38e54d;
   color: whitesmoke;
