@@ -62,4 +62,18 @@ export default {
 #slideInLeft {
   animation: slideInLeft 1s ease-in;
 }
+
+@media screen and (max-width: 300px){
+
+  .testimonial h1{
+    font-size:30px !important;
+  }
+  .testimonial{
+    padding: 10px;
+    margin: 10px;
+  }
+  #slideInLeft{
+    font-size: 30px;
+  }
+}
 </style>

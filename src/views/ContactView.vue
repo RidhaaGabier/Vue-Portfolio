@@ -128,7 +128,7 @@ export default {
 }
 
 form h2 {
-  background-color: #38e54d;
+  background-color: green;
   color: white;
   margin: 18px;
   margin: 24px;
@@ -157,12 +157,6 @@ form {
 .hijab img {
   width: 20rem;
   height: 27rem;
-}
-
-.btn-contact {
-  box-shadow: 4px 4px 10px #ccc5b9, -4px -4px 10px#FFFCF2;
-  padding: 3px;
-  background-color: #38e54d;
 }
 
 .submit-btn {
@@ -215,7 +209,7 @@ form {
 }
 
 .submitting {
-  background-color: #38e54d;
+  background-color: green;
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2.4rem;

@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <h1 id="slideInLeft">My Projects</h1>
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div v-for="project in projects" :key="project.id" class="col-12 col-sm-6 col-md-4 col-lg-3">
           <projectSite :project="project" />
@@ -71,5 +71,14 @@ export default {
 
 #slideInLeft {
   animation: slideInLeft 1s ease-in;
+}
+
+@media screen and (max-width: 300px){
+  #slideInLeft{
+  font-size: 30px;
+  margin:20px;
+  margin-bottom: 25px ;
+  }
+
 }
 </style>

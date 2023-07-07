@@ -23,10 +23,6 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
-
-*{
-  font-family: "Poppins";
-}
 .hero_sec{
   width: 100%;
   height: 800px;

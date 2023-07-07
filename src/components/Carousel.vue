@@ -5,15 +5,15 @@
         class="carousel-item"
         v-for="data in slide"
         :key="data.id"
-        :class="{ active: data.id == 1 }"
-      >
+        :class="{ active: data.id == 1 }">
+
         <h4 class="lead">{{ data.title }}</h4>
         <img
           :src="data.image_url"
-          class="d-block"
+          class="carousel-img d-block"
           :alt="data.title"
-          width="300"
-        />
+          width="300"/>
+
         <p class="lead w-75 mx-auto">{{ data.desc }}</p>
       </div>
     </div>
@@ -21,18 +21,18 @@
       class="carousel-control-prev"
       type="button"
       data-bs-target="#carouselExampleFade"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      data-bs-slide="prev">
+
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/back.png" alt="back"/>
       <span class="visually-hidden">Previous</span>
     </button>
     <button
       class="carousel-control-next"
       type="button"
       data-bs-target="#carouselExampleFade"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      data-bs-slide="next">
+
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/forward--v1.png" alt="forward--v1"/>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
@@ -44,24 +44,34 @@ export default {
 };
 </script>
 
-<style>
-/* .carousel-inner{
-  display: flex;
-  justify-content: center;
- 
- } */
+<style scoped>
+.carousel-img {
+  width: 300px;
+  height: 450px;
+}
+.carousel-inner{
+  width: 100%;
+ }
 .carousel-item,
 .carousel-item img {
   margin: 0 auto;
   text-align: center;
+  background-color: #edeade;
+  border-radius: 20px;
 }
 
 .lead {
-  width: 100%;
-  font-family: "Roborto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   margin: 18px;
   display: flex;
   justify-content: center;
+}
+.carousel-control{
+  color: black;
+}
+
+p {
+  text-wrap: balance;
 }
 </style>

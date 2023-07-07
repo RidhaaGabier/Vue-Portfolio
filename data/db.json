@@ -99,14 +99,14 @@
 
     {
       "id": "5",
-      "image_url": "https://i.postimg.cc/Tw066bdW/Screenshot-2023-07-05-100458.png",
+      "image_url": "https://i.postimg.cc/Gm9ncxSW/DSC-3569.jpg",
       "title": "John-Bruce Noad",
       "desc": "   Ridhaa Gabier is an exceptional individual who embodies both kindness and hard work. He consistently go above and beyond in his tasks with attention to detail and dedication. His genuine care for others makes them a joyful to work with and be around. I highly recommend Ridhaa for any endeavor he pursue"
     },
 
     {
       "id": "6",
-      "image_url": "https://i.postimg.cc/59X98PnH/img.jpg",
+      "image_url": "https://i.postimg.cc/HnGPCQ7C/DSC-3631.jpg",
       "title": "Zoe Daniels",
       "desc": "Ridhaa is dedicated and very passionate about his work. Working together makes me motivated to go above and beyond to reach our goals and of course, having fun while doing so."
     }
@@ -115,7 +115,7 @@
     {
       "id": "1",
       "title": "Pokemon Website",
-      "desc": "HTML,CSS",
+      "desc": "HTML,CSS Project",
       "image_url": "https://i.postimg.cc/Qxp1MKPV/Screenshot-2023-05-11-110656.png",
       "github": "https://github.com/RidhaaGabier/Pokemon.git",
       "live": "https://admirable-sawine-8278cd.netlify.app/"
@@ -124,7 +124,7 @@
     {
       "id": "2",
       "title": "Portfolio",
-      "desc": "HTML,CSS",
+      "desc": "Portfolio Project",
       "image_url": "https://i.postimg.cc/QCVDy7Tm/Screenshot-2023-05-11-110532.png",
       "github": "https://github.com/RidhaaGabier/Ridhaa-Portfolio",
       "live": "https://eloquent-cobbler-9f3b06.netlify.app/"
@@ -133,7 +133,7 @@
     {
       "id": "3",
       "title": "Porfolio 2",
-      "desc": "HTML,CSS",
+      "desc": "Portfolio Assignment",
       "image_url": "https://i.postimg.cc/XvkqZmst/Portfolio2.png",
       "github": "https://github.com/RidhaaGabier/Ridhaa-New-Portfolio.git",
       "live": "https://deft-fudge-89787f.netlify.app/ "
@@ -142,7 +142,7 @@
     {
       "id": "4",
       "title": "Ecommerce Website",
-      "desc": "JavaScript,HTML,CSS,Bootstrap",
+      "desc": "JavaScript Assignment",
       "image_url": "https://i.postimg.cc/qMNNmm7C/Ecommerce.png",
       "github": "https://github.com/RidhaaGabier/EOMP-Javascript.git",
       "live": "https://jade-pastelito-20bf8c.netlify.app/"
@@ -151,7 +151,7 @@
     {
       "id": "5",
       "title": "To-Do-List",
-      "desc": "HTML,CSS,JavaScript",
+      "desc": "Javascript Project",
       "image_url": "https://i.postimg.cc/ZRMSCzdb/To-do-list.png",
       "github": "https://github.com/RidhaaGabier/task-list.git",
       "live": "https://elaborate-donut-374f94.netlify.app/"
@@ -160,7 +160,7 @@
     {
       "id": "6",
       "title": "BMI-Calculator",
-      "desc": "JavaScript,HTML,CSS,Bootstrap",
+      "desc": "JavaScript Project",
       "image_url": "https://i.postimg.cc/Ghzfs0wW/Desktop-Screenshot-2023-07-06-20-31-59-05-2.png",
       "github": "https://github.com/RidhaaGabier/Bmi-calculator-Version-2.0.git",
       "live": "https://lively-mousse-3b84fc.netlify.app/"
@@ -168,7 +168,7 @@
     {
       "id": "7",
       "title": "Calculator Project",
-      "desc": "HTML,CSS,Bootstrap,JavaScript",
+      "desc": "Javascript Project",
       "image_url": "https://i.postimg.cc/1t9xW5p5/Calculator.png",
       "github": "https://github.com/RidhaaGabier/calculator-js-project.git",
       "live": "https://calculator-js-project-1.netlify.app/"
@@ -176,7 +176,7 @@
     {
       "id": "8",
       "title": "Temperature Convertor",
-      "desc": "HTML,CSS,Bootstrap,JavaScript",
+      "desc": "JavaScript Project",
       "image_url": "https://i.postimg.cc/jddRvvsY/Temperature-Convertor.png",
       "github": "https://github.com/RidhaaGabier/Temperature-converter.git",
       "live": "https://shiny-malabi-683c5f.netlify.app/"
