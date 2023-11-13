@@ -14,25 +14,18 @@
       <!-- Right -->
       <div>
         <a
-          href="https://www.facebook.com/facebook/"
+          href="https://www.linkedin.com/in/ridhaa-gabier-08986b276/"
           target="_blank"
           class="me-4 text-reset"
         >
-          <i class="fab fa-facebook-f" style="color: #000"></i>
+        <i class="fa-brands fa-linkedin-in" style="color: #000"></i>
         </a>
         <a
-          href="https://twitter.com/explore?lang=en"
+          href="mailto:2811rg@gmail.com"
           target="_blank"
           class="me-4 text-reset"
         >
-          <i class="fab fa-twitter" style="color: #000"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/clothingshoponline/?hl=en"
-          target="_blank"
-          class="me-4 text-reset"
-        >
-          <i class="fab fa-instagram" style="color: #000"></i>
+        <i class="fa-solid fa-envelope" style="color: #000"></i>
         </a>
         <a
           href="https://github.com/RidhaaGabier?tab=repositories"
@@ -120,8 +113,7 @@
               <i class="fas fa-envelope me-3"></i>
               2811rg@gmail.com
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 27 021 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 27 021 667 89</p>
+            <p><i class="fas fa-phone me-3"></i> + 27 69 221 8142</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -143,4 +135,8 @@
   <!-- Footer -->
 </template>
 
-<style scoped></style>
+<style scoped>
+.text-reset{
+  text-decoration: none;
+}
+</style>

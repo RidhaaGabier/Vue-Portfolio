@@ -48,11 +48,13 @@
         <h4>Description</h4>
         <ul class="desc-info">
           <li>HTML skills are intermediate.</li>
-          <li>CSS skills are good.</li>
-          <li>Bootstrap skills are good.</li>
-          <li>Git skills are good.</li>
-          <li>JavaScript skills are good.</li>
-          <li>VueJS skills are good.</li>
+          <li>CSS skills are intermediate.</li>
+          <li>Bootstrap skills are intermediate.</li>
+          <li>Git skills are intermediate.</li>
+          <li>JavaScript skills are intermediate.</li>
+          <li>VueJS skills are intermediate.</li>
+          <li>MySQL skills are intermediate.</li>
+          <li>Node.js skills are intermediate.</li>
         </ul>
       </div>
     </div>
