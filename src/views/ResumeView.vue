@@ -54,7 +54,7 @@
           <li>JavaScript skills are intermediate.</li>
           <li>VueJS skills are intermediate.</li>
           <li>MySQL skills are intermediate.</li>
-          <li>NodeJS skills are intermediate.</li>
+          <li>Node.js skills are intermediate.</li>
         </ul>
       </div>
     </div>
@@ -126,11 +126,17 @@ export default {
 }
 @keyframes slideInLeft {
   from {
-    transform: translateX(-300px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
 }
 
 #slideInLeft {

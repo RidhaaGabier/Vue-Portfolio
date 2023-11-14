@@ -102,11 +102,17 @@ export default {
 <style scoped>
 @keyframes slideInLeft {
   from {
-    transform: translateX(-300px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
 }
 
 #slideInLeft {

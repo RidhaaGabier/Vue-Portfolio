@@ -59,13 +59,19 @@ export default {
 #slideInLeft{
   animation:slideInLeft 1s ease-in;
 }
-@keyframes slideInLeft{
-  from{
-    transform: translateX(-300px);
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  to{
-    transform: translateX(0);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
 }
 .skills_heading{
 font-size: 26px;

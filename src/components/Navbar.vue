@@ -76,18 +76,21 @@ nav {
   padding: 0 25px;
   position: relative;
 }
+
 #navbar li a {
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
   color: whitesmoke;
-  transition: 0.5s ease;
+  transition: color 0.5s ease; /* Added transition property */
 }
+
 #navbar li a:hover,
-#navbar li a.active {
+#navbar li a.router-link-exact-active {
   color: white;
 }
-#navbar li a.active::after,
+
+#navbar li a.router-link-exact-active::after,
 #navbar li a:hover::after {
   content: "";
   width: 56%;
@@ -96,8 +99,49 @@ nav {
   position: absolute;
   bottom: -4px;
   left: 20px;
+  transition: width 0.3s ease; /* Added transition property for the width */
 }
-nav a.router-link-exact-active {
-  color: #42b983;
+
+@keyframes underlineAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 56%;
+  }
 }
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
+}
+
+#navbar li a.router-link-exact-active {
+  animation: colorChange 0.5s ease; /* Apply color change animation to the active link */
+  color:#38E54D ;
+}
+
+#navbar li a.router-link-exact-active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: whitesmoke;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transition: width 0.3s ease;
+  animation: underlineAnimation 0.5s ease; /* Apply underline animation to the active link */
+}
+
 </style>
