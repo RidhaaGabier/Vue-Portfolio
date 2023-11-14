@@ -16,7 +16,7 @@
               <h4><strong>Ridhaa Gabier</strong></h4>
               <em>Contact Details:</em> <br />
               <br />
-              Number: 021 967 000 <br />
+              Number: 069 221 8142 <br />
               Email: 2811rg@gmail.com<br />
               <br />
               <p>
@@ -140,7 +140,7 @@ form {
   margin-bottom: 1px;
   padding-top: 20px;
   padding-bottom: 0px ;
-  line-height: 65px;
+  line-height: 70px;
 
 }
 #contact-box {

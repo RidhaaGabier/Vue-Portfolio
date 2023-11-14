@@ -14,32 +14,25 @@
       <!-- Right -->
       <div>
         <a
-          href="https://www.facebook.com/facebook/"
+          href="https://www.linkedin.com/in/ridhaa-gabier-08986b276/"
           target="_blank"
           class="me-4 text-reset"
         >
-          <i class="fab fa-facebook-f" style="color: #000"></i>
-        </a>
-        <a
-          href="https://twitter.com/explore?lang=en"
-          target="_blank"
-          class="me-4 text-reset"
-        >
-          <i class="fab fa-twitter" style="color: #000"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/clothingshoponline/?hl=en"
-          target="_blank"
-          class="me-4 text-reset"
-        >
-          <i class="fab fa-instagram" style="color: #000"></i>
-        </a>
+          <i class="fa-brands fa-linkedin" style="color: black"></i>
+          </a>
         <a
           href="https://github.com/RidhaaGabier?tab=repositories"
           target="_blank"
           class="me-4 text-reset"
         >
           <i class="fab fa-github" style="color: black"></i>
+        </a>
+                <a
+          href="mailto:2811rg@gmail.com"
+          target="_blank"
+          class="me-4 text-reset"
+        >
+         <i class="fa-solid fa-envelope" style="color: black"></i>
         </a>
       </div>
       <!-- Right -->
@@ -66,12 +59,12 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Projects</h6>
             <p>
-              <router-link to="/project" class="text-reset">HTML</router-link>
+              <router-link to="/project" class="text-reset">NodeJS</router-link>
               <router-link to="/project" class="text-reset"></router-link>
             </p>
             <p>
               <router-link to="/project" class="text-reset"
-                >Boostrap</router-link
+                >MySQL</router-link
               >
               <router-link to="/project" class="text-reset"></router-link>
             </p>
@@ -115,13 +108,12 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> Cape Town, WC 10012, ZA</p>
+            <p><i class="fas fa-home me-3"></i> Cape Town, WC 7100, ZA</p>
             <p>
               <i class="fas fa-envelope me-3"></i>
               2811rg@gmail.com
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 27 021 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 27 021 667 89</p>
+            <p><i class="fas fa-phone me-3"></i> + 27 69 221 8142</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -143,4 +135,12 @@
   <!-- Footer -->
 </template>
 
-<style scoped></style>
+<style scoped>
+
+/* .text-reset{
+
+  text-decoration:none;
+  
+} */
+
+</style>

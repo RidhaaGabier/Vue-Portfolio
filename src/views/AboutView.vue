@@ -14,7 +14,7 @@
           <div id="bounce" class="mb-1 gray-bg" :class="{scroller: showFlag}">
             <h2 class="m-heading">Software Developer</h2>
             <p>
-              My name is <b class="text-success">Ridhaa Gabier </b>, I'm hard
+              My name is <b class="text-success">Ridhaa Gabier </b>, I am an Aspiring <b class="text-success">Full Stack Software Developer</b>. I'm hard
               working and dedicated to achieve the goals my heart desires. I'm a
               <b class="text-success">trustworthy</b> and loyal companion and
               love working in groups.I am an
@@ -50,11 +50,9 @@
                 to operate devices such as computers,laptops etc. I am quite
                 skilled in
                 <b class="text-success"
-                  >HTML , CSS , Git , GitHub, Bootstrap, JavaScript and VueJS</b
-                >. Currently I'm studying at
-                <b class="text-success">Life Choices Academy</b> to improve my
-                technical and social skills and eventually become a certified
-                Full Stack Software Developer.
+                  >HTML , CSS , Git , GitHub, Bootstrap, JavaScript, VueJS, MySQL and NodeJS</b
+                >. Currently I am an intern, upskilling myself at
+                <b class="text-success">Life Choices Studio</b> with an AWS Cloud Practitioner course.
               </p>
 
               <p

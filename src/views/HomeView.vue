@@ -6,7 +6,7 @@
       <h2 class="intro_heading">Hi, My Name Is</h2>
       <h2 id="slideInLeft" class="name_heading">Ridhaa Gabier</h2>
       <h2 class="skills_heading">I'm a <span class="textTyper">Software Developer</span></h2>
-      <a style="text-decoration: none;" href="https://drive.google.com/file/d/1OR9lAT0gW03VvkPAsIi6VfXsr3I2tiOt/view?usp=sharing" target="_blank">
+      <a style="text-decoration: none;" href="https://drive.google.com/file/d/1dCeG2y9NquEFRQeJ434y1OYTgAahmUxx/view?usp=sharing" target="_blank">
         <button class="hero_btn">Download CV</button>
       </a>
     </div>
