@@ -35,6 +35,7 @@ export default {
   border-radius: 50%;
   box-shadow: 8px 8px 15px whitesmoke, -4px -4px 15px silver;
   background: whitesmoke;
+  height: 80%;
 }
 .hero_content{
   display: flex;
@@ -42,7 +43,7 @@ export default {
   gap: 10px;
 }
 .intro_heading{
-  font-size: 22px;
+  font-size: 42px;
   color:#38E54D;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -148,7 +149,7 @@ text-transform: capitalize;
 @media(max-width:300px){
   .hero_img{
     width: 100%;
-    height: 100%;
+    height: 60%;
   }
   .hero_content{
   display: flex;
@@ -156,7 +157,7 @@ text-transform: capitalize;
   gap: 1px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .intro_heading{
   font-size: 20px;
