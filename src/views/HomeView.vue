@@ -1,7 +1,7 @@
 <template>
   <div class="home">
    <section class="hero_sec">
-    <img src="https://i.postimg.cc/QMdQr153/new-size-removebg-preview.png" class="hero_img">
+    <img src="https://i.ibb.co/L8syvhq/C12-Ridhaa-Gabier-2.jpg" class="hero_img">
     <div class="hero_content">
       <h2 class="intro_heading">Hi, My Name Is</h2>
       <h2 id="slideInLeft" class="name_heading">Ridhaa Gabier</h2>

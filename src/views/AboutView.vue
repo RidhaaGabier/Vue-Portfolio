@@ -6,7 +6,7 @@
       <section class="about">
         <div class="about-image">
           <img
-            src="https://i.postimg.cc/qBnMwVTy/C12-Ridhaa-Gabier-2.jpg"
+            src="https://i.ibb.co/L8syvhq/C12-Ridhaa-Gabier-2.jpg"
             alt="Image"
           />
         </div>
