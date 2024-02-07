@@ -52,7 +52,7 @@
                 to operate devices such as computers,laptops etc. I am quite
                 skilled in
                 <b class="text-success"
-                  >HTML , CSS , Git , GitHub, Bootstrap, JavaScript, VueJS, MySQL and NodeJS</b
+                  >HTML , CSS , Git , GitHub, Bootstrap, JavaScript, VueJS, Wordpress, MySQL and NodeJS</b
                 >. Currently I am an intern, upskilling myself at
                 <b class="text-success">Life Choices Studio</b> with an AWS Cloud Practitioner course.
               </p>

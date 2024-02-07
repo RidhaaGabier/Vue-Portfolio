@@ -1,0 +1,97 @@
+[debug] [2024-02-07T11:24:42.616Z] ----------------------------------------------------------------------
+[debug] [2024-02-07T11:24:42.624Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Intern-66\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-07T11:24:42.625Z] CLI Version:   13.2.0
+[debug] [2024-02-07T11:24:42.625Z] Platform:      win32
+[debug] [2024-02-07T11:24:42.625Z] Node Version:  v21.1.0
+[debug] [2024-02-07T11:24:42.625Z] Time:          Wed Feb 07 2024 13:24:42 GMT+0200 (South Africa Standard Time)
+[debug] [2024-02-07T11:24:42.625Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-07T11:24:42.628Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-07T11:24:42.727Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-07T11:24:42.727Z] > authorizing via signed-in user (2811rg@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Intern-66\Desktop\Vue-Portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-02-07T11:24:43.491Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-07T11:24:43.491Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-07T11:25:58.283Z] Using project from CLI flag: ridhaagabier-34dc9
+[debug] [2024-02-07T11:25:58.284Z] > refreshing access token with scopes: []
+[debug] [2024-02-07T11:25:58.285Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-07T11:25:58.285Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-07T11:25:59.088Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-07T11:25:59.089Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-07T11:25:59.097Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ridhaagabier-34dc9 [none]
+[debug] [2024-02-07T11:25:59.905Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ridhaagabier-34dc9 200
+[debug] [2024-02-07T11:25:59.906Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ridhaagabier-34dc9 {"projectId":"ridhaagabier-34dc9","projectNumber":"76822919327","displayName":"RidhaaGabier","name":"projects/ridhaagabier-34dc9","resources":{"hostingSite":"ridhaagabier-34dc9"},"state":"ACTIVE","etag":"1_f30e8262-77ba-4ff6-973b-9dbb950a5057"}
+[info] i  Using project ridhaagabier-34dc9 (RidhaaGabier) 
+[info] 
+=== Hosting Setup
+[debug] [2024-02-07T11:25:59.925Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ridhaagabier-34dc9 [none]
+[debug] [2024-02-07T11:26:00.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ridhaagabier-34dc9 200
+[debug] [2024-02-07T11:26:00.282Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ridhaagabier-34dc9 {"projectId":"ridhaagabier-34dc9","projectNumber":"76822919327","displayName":"RidhaaGabier","name":"projects/ridhaagabier-34dc9","resources":{"hostingSite":"ridhaagabier-34dc9"},"state":"ACTIVE","etag":"1_f30e8262-77ba-4ff6-973b-9dbb950a5057"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-02-07T11:26:47.787Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-02-07T11:26:48.046Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-02-07T11:26:48.046Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.0","browserURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of dist/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Intern-66\Desktop\Vue-Portfolio 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=157111700&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-02-07T11:26:59.431Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-02-07T11:26:59.432Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-02-07T11:26:59.898Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-02-07T11:26:59.898Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-02-07T11:26:59.905Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-02-07T11:27:00.318Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-02-07T11:27:00.318Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"RidhaaGabier","id":130047049,"node_id":"U_kgDOB8BcSQ","avatar_url":"https://avatars.githubusercontent.com/u/130047049?v=4","gravatar_id":"","url":"https://api.github.com/users/RidhaaGabier","html_url":"https://github.com/RidhaaGabier","followers_url":"https://api.github.com/users/RidhaaGabier/followers","following_url":"https://api.github.com/users/RidhaaGabier/following{/other_user}","gists_url":"https://api.github.com/users/RidhaaGabier/gists{/gist_id}","starred_url":"https://api.github.com/users/RidhaaGabier/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/RidhaaGabier/subscriptions","organizations_url":"https://api.github.com/users/RidhaaGabier/orgs","repos_url":"https://api.github.com/users/RidhaaGabier/repos","events_url":"https://api.github.com/users/RidhaaGabier/events{/privacy}","received_events_url":"https://api.github.com/users/RidhaaGabier/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":53,"public_gists":0,"followers":1,"following":0,"created_at":"2023-04-06T09:16:34Z","updated_at":"2023-11-13T10:59:42Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":128883,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as RidhaaGabier 
+[info] 
+[debug] [2024-02-07T11:30:32.259Z] >>> [apiv2][query] GET https://api.github.com/repos/RidhaaGabier / Vue-Portfolio/actions/secrets/public-key type=owner
+[debug] [2024-02-07T11:30:32.625Z] <<< [apiv2][status] GET https://api.github.com/repos/RidhaaGabier / Vue-Portfolio/actions/secrets/public-key 404
+[debug] [2024-02-07T11:30:32.626Z] <<< [apiv2][body] GET https://api.github.com/repos/RidhaaGabier / Vue-Portfolio/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-02-07T11:30:44.740Z] >>> [apiv2][query] GET https://api.github.com/repos/RidhaaGabier / Vue-Portfolio/actions/secrets/public-key type=owner
+[debug] [2024-02-07T11:30:45.125Z] <<< [apiv2][status] GET https://api.github.com/repos/RidhaaGabier / Vue-Portfolio/actions/secrets/public-key 404
+[debug] [2024-02-07T11:30:45.125Z] <<< [apiv2][body] GET https://api.github.com/repos/RidhaaGabier / Vue-Portfolio/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
