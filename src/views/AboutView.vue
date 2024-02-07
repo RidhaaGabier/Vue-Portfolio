@@ -8,6 +8,8 @@
           <img
             src="https://i.ibb.co/L8syvhq/C12-Ridhaa-Gabier-2.jpg"
             alt="Image"
+            width="500"
+  
           />
         </div>
         <div id="App" class="about-content">
